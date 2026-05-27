@@ -1,0 +1,24 @@
+{
+  "name": "freejournalapp",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": {
+    "node": ">=22"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "scripts": {
+    "dev": "pnpm --filter @journal/web dev",
+    "build": "pnpm --filter @journal/web build",
+    "preview": "pnpm --filter @journal/web preview",
+    "typecheck": "pnpm --filter @journal/web exec tsc -b",
+    "test": "pnpm --filter @journal/web test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeappstore-online/journal.git"
+  }
+}
